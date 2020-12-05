@@ -1,6 +1,8 @@
 # ChitraKalaBidyamandir
 An art institution. not only to show the beauty of art but also to bring out the creativity from youth.
-initiative: Suvajit Sadhak, Sourav Sadhak, Amit Mondal
+
+initiative: Suvajit Sadhak, Sourav Sadhak, Amit Mondal.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.0.
 
 ## Setup
