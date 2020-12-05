@@ -18,6 +18,8 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Developer Contact
-for further details contact our developer - Arindam Dutta,
+for further details contact our developer - Arindam Dutta
+
 Phone No - 8282826909
+
 Email ID - darindam507@gmail.com
