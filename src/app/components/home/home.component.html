@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="img-slider">
+      <p-galleria [(value)]="images" [responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '100%'}" [numVisible]="5" [circular]="true"
+      [autoPlay]="true" [transitionInterval]="2000" [showThumbnails]="false" [showIndicators]="false"> 
+          <ng-template pTemplate="item" let-item>
+              <img [src]="item.previewImageSrc" style="height: 700px; width: 100%; display: block;" />
+          </ng-template>
+      </p-galleria>
+  </div>
+  <div class="cards-container">
+      <div class="card">card 1</div>
+      <div class="card">card 2</div>
+      <div class="card">card 3</div>
+      <div class="card">card 1</div>
+      <div class="card">card 2</div>
+      <div class="card">card 3</div>
+      <div class="card">card 1</div>
+      <div class="card">card 2</div>
+      <div class="card">card 3</div>
+      <div class="card">card 1</div>
+      <div class="card">card 2</div>
+      <div class="card">card 3</div>
+  </div>
+</div>
+
+

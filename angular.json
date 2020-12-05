@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ChitraKala-Bidyamandir"
+    }
+  },
+  "defaultProject": "ChitraKala-Bidyamandir",
+  "cli": {
+    "analytics": "a73e99c3-2f22-4836-a580-bdc406481dc8"
+  }
 }
