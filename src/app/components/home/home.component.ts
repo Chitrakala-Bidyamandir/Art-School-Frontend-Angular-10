@@ -34,32 +34,32 @@ export class HomeComponent implements OnInit {
       ];
       this.images=[
             {
-                "previewImageSrc": "http://192.168.1.6:3000/pic1.jpg",
-                "thumbnailImageSrc": "http://192.168.1.6:3000/pic1.jpg",
-                "alt": "Description for Image 1",
+                "previewImageSrc": "assets/images/pic1.jpg",
+                "thumbnailImageSrc": "assets/images/pic1.jpg",
+                "alt": "image 1",
                 "title": "Title 1"
             },
             {
-                "previewImageSrc": "http://192.168.1.6:3000/pic2.jpg",
-                "thumbnailImageSrc": "http://192.168.1.6:3000/pic2.jpg",
+                "previewImageSrc": "assets/images/pic2.jpg",
+                "thumbnailImageSrc": "assets/images/pic2.jpg",
                 "alt": "Description for Image 2",
                 "title": "Title 2"
             },
             {
-              "previewImageSrc": "http://192.168.1.6:3000/pic3.jpg",
-              "thumbnailImageSrc": "http://192.168.1.6:3000/pic2.jpg",
+              "previewImageSrc": "assets/images/pic3.jpg",
+              "thumbnailImageSrc": "assets/images/pic3.jpg",
               "alt": "Description for Image 2",
               "title": "Title 2"
             },
             {
-              "previewImageSrc": "http://192.168.1.6:3000/pic4.jpg",
-              "thumbnailImageSrc": "http://192.168.1.6:3000/pic2.jpg",
+              "previewImageSrc": "assets/images/pic4.jpg",
+              "thumbnailImageSrc": "assets/images/pic4.jpg",
               "alt": "Description for Image 2",
               "title": "Title 2"
             },
             {
-              "previewImageSrc": "http://192.168.1.6:3000/pic5.jpg",
-              "thumbnailImageSrc": "http://192.168.1.6:3000/pic2.jpg",
+              "previewImageSrc": "assets/images/pic5.jpg",
+              "thumbnailImageSrc": "assets/images/pic5.jpg",
               "alt": "Description for Image 2",
               "title": "Title 2"
             },
