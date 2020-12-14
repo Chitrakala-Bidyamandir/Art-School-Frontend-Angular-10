@@ -6,7 +6,7 @@ function DOMOnLoad(){
     } else {
       document.querySelector('.take-to-top').style.display = "none"
     }
-    console.log(window.scrollY+'  '+window.innerHeight)    
+    // console.log(window.scrollY+'  '+window.innerHeight)    
   }
 
 }
