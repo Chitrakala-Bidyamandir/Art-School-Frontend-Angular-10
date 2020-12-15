@@ -1,3 +1,5 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
 <nav class="navbar">
   <input id="nav-toggle" type="checkbox">
   <div class="logo">Chitrakala<strong>Bidyamandir</strong></div>
@@ -18,10 +20,21 @@
   </button>
 <!-- </div> -->
 
-<span class="p-overlay-badge bell">
+<span (click)="showMaximizableDialog()" class="p-overlay-badge bell">
   <i class="pi pi-bell material-icons layer-3">
     <span class="p-badge">1</span>
   </i>
 </span>
+<p-dialog styleClass="mydialog" header="New Event Coming Soon" [(visible)]="displayMaximizable" [modal]="true" [style]="{width: '70vw'}" [maximizable]="true" [baseZIndex]="10000"
+    [draggable]="false" [resizable]="false">
+    <div class="event-popup-wrapper">
+      <p>our new event is coming soon to stay updated about our event keep visiting our website:- <a href="https://chitrakala-bidyamandir.netlify.app/">chitrakala-bidyamandir</a>  .</p>
+      <img src="assets/images/thanks.jpg" alt="">
+    </div>
+   
+        <ng-template pTemplate="footer">
+            <p-button icon="pi pi-check" (click)="displayMaximizable=false" label="thanks" class="p-button-text"></p-button>
+        </ng-template>
+</p-dialog>
 <router-outlet></router-outlet>
 

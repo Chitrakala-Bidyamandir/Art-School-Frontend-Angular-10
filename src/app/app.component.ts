@@ -20,12 +20,16 @@ export class AppComponent  {
     this.primengConfig.ripple = true;
 
   }
+  title = 'ChitraKala-Bidyamandir';
+  displayMaximizable: boolean;
+  showMaximizableDialog() {
+    this.displayMaximizable = true;
+  }
   scrolling=(s)=>{
     document.body.scrollTop = 0
     document.documentElement.scrollTop = 0
   }
   // 
-  title = 'ChitraKala-Bidyamandir';
 }
 
 

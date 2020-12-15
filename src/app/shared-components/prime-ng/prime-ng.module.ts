@@ -3,7 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { GalleriaModule } from 'primeng/galleria';
 import { CardModule } from 'primeng/card';
-import {ButtonModule} from 'primeng/button';
+import { ButtonModule } from 'primeng/button';
+import { DialogModule } from 'primeng/dialog';
 
 @NgModule({
   declarations: [],
@@ -11,12 +12,14 @@ import {ButtonModule} from 'primeng/button';
     CommonModule,
     GalleriaModule,
     ButtonModule,
-    CardModule
+    CardModule,
+    DialogModule
   ],
   exports:[
     GalleriaModule,
     ButtonModule,
-    CardModule
+    CardModule,
+    DialogModule
   ]
 })
 export class PrimeNgModule { }
