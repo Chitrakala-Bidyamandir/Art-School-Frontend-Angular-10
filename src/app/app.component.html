@@ -1,13 +1,13 @@
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
+<!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet"> -->
 <nav class="navbar">
   <input id="nav-toggle" type="checkbox">
   <div class="logo">Chitrakala<strong>Bidyamandir</strong></div>
   <ul class="links">
     <li class="nav-menu-link" routerLink="/home" routerLinkActive="active"><span><i class="pi pi-home"></i></span>Home</li>
-    <li class="nav-menu-link" routerLink="/about" routerLinkActive="active"><span><i class="pi pi-info-circle"></i></span>AboutUs</li>
-    <li class="nav-menu-link" routerLink="/gallery" routerLinkActive="active"><span><i class="pi pi-camera"></i></span>Gallery</li>
     <li class="nav-menu-link" routerLink="/events" routerLinkActive="active"><span><i class="pi pi-book"></i></span>Events</li>
+    <li class="nav-menu-link" routerLink="/gallery" routerLinkActive="active"><span><i class="pi pi-camera"></i></span>Gallery</li>
+    <li class="nav-menu-link" routerLink="/about" routerLinkActive="active"><span><i class="pi pi-info-circle"></i></span>AboutUs</li>
   </ul>
   <label for="nav-toggle" class="icon-burger">
     <div class="line"></div>
@@ -29,12 +29,13 @@
     [draggable]="false" [resizable]="false">
     <div class="event-popup-wrapper">
       <p>our new event is coming soon to stay updated about our event keep visiting our website:- <a href="https://chitrakala-bidyamandir.netlify.app/">chitrakala-bidyamandir</a>  .</p>
-      <img src="assets/images/thanks.jpg" alt="">
+      <img src="assets/images/art2.svg" alt="">
     </div>
    
         <ng-template pTemplate="footer">
             <p-button icon="pi pi-check" (click)="displayMaximizable=false" label="thanks" class="p-button-text"></p-button>
         </ng-template>
 </p-dialog>
+
 <router-outlet></router-outlet>
 

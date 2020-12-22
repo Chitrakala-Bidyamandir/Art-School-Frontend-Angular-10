@@ -31,7 +31,10 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/swiper.js",
+              "src/assets/js/custom.js"
+            ]
           },
           "configurations": {
             "production": {

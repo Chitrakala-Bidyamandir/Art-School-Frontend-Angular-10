@@ -1,3 +1,4 @@
+import { SharedModuleModule } from './../../shared-components/shared-module/shared-module.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,7 +10,8 @@ import { EventsComponent } from './events.component';
   declarations: [EventsComponent],
   imports: [
     CommonModule,
-    EventsRoutingModule
+    EventsRoutingModule,
+    SharedModuleModule
   ]
 })
 export class EventsModule { }

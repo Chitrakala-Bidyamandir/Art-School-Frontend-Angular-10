@@ -17,6 +17,7 @@ export class AppComponent  {
 
   
   ngOnInint(){
+
     this.primengConfig.ripple = true;
 
   }

@@ -1,14 +1,25 @@
 <div class="container">
-  <div class="card"></div>
-  <div class="card"></div>
-  <div class="card"></div>
-  <div class="card"></div>
-  <div class="card"></div>
-  <div class="card"></div>
-  <div class="card"></div>
-  <div class="card"></div>
-  <div class="card"></div>
-  <div class="card"></div>
-  <div class="card"></div>
-  <div class="card"></div>
+
+  <p-galleria [(value)]="images" [(visible)]="displayCustom" [(activeIndex)]="activeIndex" [responsiveOptions]="responsiveOptions2" [containerStyle]="{'max-width': '850px'}" [numVisible]="7"
+  [circular]="true" [fullScreen]="true" [showItemNavigators]="true" [showThumbnails]="false" [baseZIndex]="100000"> 
+  <ng-template pTemplate="item" let-item>
+      <img [src]="item.previewImageSrc" style="width: 100%; display: block;"/>
+  </ng-template>
+  <ng-template pTemplate="thumbnail" let-item>
+      <div class="p-grid p-nogutter p-justify-center">
+          <img [src]="item.thumbnailImageSrc" style="display: block;"/>
+      </div>
+  </ng-template>
+  </p-galleria>
+  <div class="gallery">
+      <div *ngFor="let image of images; let index = index;">
+        <div class="pic-wrapper">
+          <img [src]="image.thumbnailImageSrc" [alt]="image.alt" style="cursor: pointer" (click)="imageClick(index)"/>
+        </div>
+      </div>
+  </div>
+
 </div>
+
+
+<app-footer></app-footer>

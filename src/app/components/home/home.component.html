@@ -1,54 +1,28 @@
 <div class="container">
-  <div class="img-slider">
-      <p-galleria [(value)]="images" [responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '100%'}" [numVisible]="5" [circular]="true"
-      [autoPlay]="true" [transitionInterval]="2000" [showThumbnails]="false" [showIndicators]="false"> 
-          <ng-template pTemplate="item" let-item>
-              <img [src]="item.previewImageSrc" style="height: 700px; width: 100%; display: block;" />
-          </ng-template>
-      </p-galleria>
-  </div>
-  <div class="cards-container">
 
-    <p-card header="Advanced Card" subheader="Card Subheader" [style]="{width: '360px'}" styleClass="p-card-shadow">
-        <ng-template pTemplate="header">
-            <img alt="Card" src="assets/images/pic1.jpg">
-        </ng-template>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
-            quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
+   
+        <slider class="img-slider"></slider>
+        
+    
+    
+    <div class="banner">
+        <div class="event-wrapper">
+            <div class="captions">
+                <!-- <h2>New Event : March 2021</h2> -->
+                <h1>Art and Craft season 2 coming soon </h1>
+            </div>
+            <div class="image">
+                <img src="assets/images/art.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+
       
-    </p-card>
-    <p-card header="Advanced Card" subheader="Card Subheader" [style]="{width: '360px'}" styleClass="p-card-shadow">
-        <ng-template pTemplate="header">
-            <img alt="Card" src="assets/images/pic2.jpg">
-        </ng-template>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
-            quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
-      
-    </p-card>
-    <p-card header="Advanced Card" subheader="Card Subheader" [style]="{width: '360px'}" styleClass="p-card-shadow">
-        <ng-template pTemplate="header">
-            <img alt="Card" src="assets/images/pic3.jpg">
-        </ng-template>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
-            quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
-      
-    </p-card>
-    <p-card header="Advanced Card" subheader="Card Subheader" [style]="{width: '360px'}" styleClass="p-card-shadow">
-        <ng-template pTemplate="header">
-            <img alt="Card" src="assets/images/pic4.jpg">
-        </ng-template>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
-            quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
-      
-    </p-card>
-    <p-card header="Advanced Card" subheader="Card Subheader" [style]="{width: '360px'}" styleClass="p-card-shadow">
-        <ng-template pTemplate="header">
-            <img alt="Card" src="assets/images/pic5.jpg">
-        </ng-template>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
-            quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
-    </p-card>
-  </div>
+    
+  <div class="cards-container">
+    <card class="" *ngFor="let card of cards;" [data]="card"></card>
+   </div>
 </div>
 
-
+<app-footer></app-footer>

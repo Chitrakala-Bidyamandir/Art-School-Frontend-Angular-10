@@ -1,0 +1,21 @@
+.footer{
+  .hr{
+    background-color: tomato;
+    width: 80%;
+    height: 5px;
+  }
+  .social-media{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+  }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 500px;
+  width: 100%;
+  color: tomato;
+  background-color: transparent;
+}

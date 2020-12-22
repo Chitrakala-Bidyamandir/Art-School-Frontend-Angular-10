@@ -1,3 +1,5 @@
+import { PrimeNgModule } from './../../shared-components/prime-ng/prime-ng.module';
+import { SharedModuleModule } from './../../shared-components/shared-module/shared-module.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,7 +11,9 @@ import { GalleryComponent } from './gallery.component';
   declarations: [GalleryComponent],
   imports: [
     CommonModule,
-    GalleryRoutingModule
+    GalleryRoutingModule,
+    SharedModuleModule,
+    PrimeNgModule
   ]
 })
 export class GalleryModule { }
