@@ -1,3 +1,4 @@
+import { DbService } from './../../services/db.service';
 import { Component, OnInit,Input } from '@angular/core';
 import { set_swiper } from 'src/assets/js/custom.js';
 
@@ -9,30 +10,34 @@ import { set_swiper } from 'src/assets/js/custom.js';
 export class SliderComponent implements OnInit {
 @Input('URL') imgSrc: string;
 @Input('caption') imgCap: string;
-public images: any[]=[
-  {
-    "imgURL":"assets/images/pic1.jpg",
-    "imgCaption":"image1"
-  },
-  {
-    "imgURL":"assets/images/pic2.jpg",
-    "imgCaption":"image2"
-  },
-  {
-    "imgURL":"assets/images/pic3.jpg",
-    "imgCaption":"image3"
-  },
-  {
-    "imgURL":"assets/images/pic4.jpg",
-    "imgCaption":"image4"
-  },
-  {
-    "imgURL":"assets/images/pic5.jpg",
-    "imgCaption":"image5"
-  }
-]
+public images: any[];
 
-constructor() { }
+constructor(
+  public img_db: DbService
+) { 
+  this.images=[
+    {
+      "imgURL":this.img_db.PhotoDb.events[1].pic1,
+      "imgCaption":"patta chitra season 1"
+    },
+    {
+      "imgURL":this.img_db.PhotoDb.events[1].pic2,
+      "imgCaption":"patta chitra season 1"
+    },
+    {
+      "imgURL":this.img_db.PhotoDb.events[1].pic3,
+      "imgCaption":"patta chitra season 1"
+    },
+    {
+      "imgURL":this.img_db.PhotoDb.events[1].pic4,
+      "imgCaption":"patta chitra season 1"
+    },
+    {
+      "imgURL":this.img_db.PhotoDb.events[1].pic5,
+      "imgCaption":"patta chitra season 1"
+    }
+  ]
+}
 
   ngOnInit(): void {
     set_swiper()

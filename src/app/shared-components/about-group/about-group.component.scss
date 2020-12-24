@@ -1,0 +1,35 @@
+.header-wrapper{
+  .img-wrapper{
+    img{
+      border-radius: 50px;
+      height: 100%;
+      width: 100%;
+    }
+    height: 50px;
+    width: 50px;
+  }
+  .description{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  // flex-wrap: wrap;
+  gap: 20px;
+}
+.dev-wrapper{
+  .dev-img-wrapper{
+    img{
+      height: 100%;
+      width: 100%;
+    }
+    height: 100px;
+    width: 120px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}

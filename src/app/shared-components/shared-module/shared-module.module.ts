@@ -4,11 +4,13 @@ import { CommonModule } from '@angular/common';
 import { FooterComponent } from '../footer/footer.component';
 import { SliderComponent } from '../slider/slider.component';
 import { CardComponent } from '../card/card.component';
+import { AboutGroupComponent } from '../about-group/about-group.component';
+import { EventBannerComponent } from '../event-banner/event-banner.component';
 
 
 
 @NgModule({
-  declarations: [FooterComponent, SliderComponent, CardComponent],
+  declarations: [FooterComponent, SliderComponent, CardComponent, AboutGroupComponent, EventBannerComponent],
   imports: [
     CommonModule,
     PrimeNgModule
@@ -16,7 +18,9 @@ import { CardComponent } from '../card/card.component';
   exports:[
     FooterComponent,
     SliderComponent,
-    CardComponent
+    CardComponent,
+    AboutGroupComponent,
+    EventBannerComponent
   ]
 })
 export class SharedModuleModule { }

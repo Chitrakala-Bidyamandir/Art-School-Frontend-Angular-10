@@ -22,39 +22,16 @@
   gap: 15px;
 }
 .banner{
-  .event-wrapper{  
-    .captions{
-      // background-color: red;
-      height: 100px;  
-    }
-    .image{
-      // background-color: white;
-      img{
-        height: 100%;
-        width: 100%;
-      }
-      height: 300px;
-      width: 100%;
-    
-    }
-    // background: red;
-    margin-top: 100px;
-    height: 400px;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
+
   order: 1;
-  width: 100%;
-  height: 700px;
-  background-color: #ffefe1;
-  color: #FF5722;
-  display: flex;
-  // flex-direction: column;
-  justify-content: center;
+  // width: 100%;
+  // height: 600px;
+  // background-color: #ffefe1;
+  // color: #FF5722;
+  // display: flex;
+  // align-items: center;
+  // // flex-direction: column;
+  // justify-content: center;
   
 }
 
@@ -66,6 +43,9 @@
   // height: 800px;
   // width: 100%;
 
+}
+.about{
+  order: 4;
 }
 
 

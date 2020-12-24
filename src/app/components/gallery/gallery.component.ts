@@ -1,3 +1,4 @@
+import { DbService } from './../../services/db.service';
 import { PrimeNGConfig } from 'primeng/api';
 import { Component, OnInit } from '@angular/core';
 
@@ -51,152 +52,125 @@ export class GalleryComponent implements OnInit {
 
 
   constructor(
+    public img_db: DbService,
     private primengConfig: PrimeNGConfig
       ) { }
 
   ngOnInit(): void {
     this.primengConfig.ripple = true;
     this.images = [
+      
       {
-        "previewImageSrc": "assets/images/pic1.jpg",
-        "thumbnailImageSrc": "assets/images/pic1.jpg",
-        "alt": "Description for Image 1",
-        "title": "Title 1"
+        "previewImageSrc": this.img_db.PhotoDb.events[1].pic1,
       },
       {
-      "previewImageSrc": "assets/images/pic2.jpg",
-      "thumbnailImageSrc": "assets/images/pic2.jpg",
-      "alt": "Description for Image 1",
-      "title": "Title 1"
+      "previewImageSrc": this.img_db.PhotoDb.events[1].pic2,
+
       },
       {
-      "previewImageSrc": "assets/images/pic3.jpg",
-      "thumbnailImageSrc": "assets/images/pic3.jpg",
-      "alt": "Description for Image 1",
-      "title": "Title 1"
+      "previewImageSrc": this.img_db.PhotoDb.events[1].pic3,
+
       },
       {
-        "previewImageSrc": "assets/images/pic4.jpg",
-        "thumbnailImageSrc": "assets/images/pic4.jpg",
-        "alt": "Description for Image 1",
-        "title": "Title 1"
+        "previewImageSrc": this.img_db.PhotoDb.events[1].pic4,
+
       },
       {
-        "previewImageSrc": "assets/images/pic5.jpg",
-        "thumbnailImageSrc": "assets/images/pic5.jpg",
-        "alt": "Description for Image 1",
-        "title": "Title 1"
+        "previewImageSrc": this.img_db.PhotoDb.events[1].pic5,
+    
       },
       {
-        "previewImageSrc": "assets/images/pic6.jpg",
-        "thumbnailImageSrc": "assets/images/pic6.jpg",
-        "alt": "Description for Image 1",
-        "title": "Title 1"
+        "previewImageSrc": this.img_db.PhotoDb.events[1].pic6,
+   
       },{
-        "previewImageSrc": "assets/images/pic1.jpg",
-        "thumbnailImageSrc": "assets/images/pic1.jpg",
-        "alt": "Description for Image 1",
-        "title": "Title 1"
+        "previewImageSrc": this.img_db.PhotoDb.events[1].pic7,
+   
       },
       {
-      "previewImageSrc": "assets/images/pic2.jpg",
-      "thumbnailImageSrc": "assets/images/pic2.jpg",
-      "alt": "Description for Image 1",
-      "title": "Title 1"
+      "previewImageSrc": this.img_db.PhotoDb.events[1].pic8,
+
       },
       {
-      "previewImageSrc": "assets/images/pic3.jpg",
-      "thumbnailImageSrc": "assets/images/pic3.jpg",
-      "alt": "Description for Image 1",
-      "title": "Title 1"
+      "previewImageSrc": this.img_db.PhotoDb.events[1].pic9,
+ 
       },
       {
-        "previewImageSrc": "assets/images/pic4.jpg",
-        "thumbnailImageSrc": "assets/images/pic4.jpg",
-        "alt": "Description for Image 1",
-        "title": "Title 1"
+        "previewImageSrc": this.img_db.PhotoDb.events[1].pic10,
+  
       },
       {
-        "previewImageSrc": "assets/images/pic5.jpg",
-        "thumbnailImageSrc": "assets/images/pic5.jpg",
-        "alt": "Description for Image 1",
-        "title": "Title 1"
+        "previewImageSrc": this.img_db.PhotoDb.events[1].pic11,
+    
       },
       {
-        "previewImageSrc": "assets/images/pic6.jpg",
-        "thumbnailImageSrc": "assets/images/pic6.jpg",
-        "alt": "Description for Image 1",
-        "title": "Title 1"
+        "previewImageSrc": this.img_db.PhotoDb.events[1].pic12,
+ 
       },{
-        "previewImageSrc": "assets/images/pic1.jpg",
-        "thumbnailImageSrc": "assets/images/pic1.jpg",
-        "alt": "Description for Image 1",
-        "title": "Title 1"
+        "previewImageSrc": this.img_db.PhotoDb.events[1].pic13,
+
       },
       {
-      "previewImageSrc": "assets/images/pic2.jpg",
-      "thumbnailImageSrc": "assets/images/pic2.jpg",
-      "alt": "Description for Image 1",
-      "title": "Title 1"
+      "previewImageSrc": this.img_db.PhotoDb.events[1].pic14,
+  
       },
       {
-      "previewImageSrc": "assets/images/pic3.jpg",
-      "thumbnailImageSrc": "assets/images/pic3.jpg",
-      "alt": "Description for Image 1",
-      "title": "Title 1"
+      "previewImageSrc": this.img_db.PhotoDb.events[1].pic15,
+  
       },
       {
-        "previewImageSrc": "assets/images/pic4.jpg",
-        "thumbnailImageSrc": "assets/images/pic4.jpg",
-        "alt": "Description for Image 1",
-        "title": "Title 1"
+        "previewImageSrc": this.img_db.PhotoDb.events[1].pic16,
+    
       },
       {
-        "previewImageSrc": "assets/images/pic5.jpg",
-        "thumbnailImageSrc": "assets/images/pic5.jpg",
-        "alt": "Description for Image 1",
-        "title": "Title 1"
+        "previewImageSrc": this.img_db.PhotoDb.events[1].pic17,
+
       },
       {
-        "previewImageSrc": "assets/images/pic6.jpg",
-        "thumbnailImageSrc": "assets/images/pic6.jpg",
-        "alt": "Description for Image 1",
-        "title": "Title 1"
+        "previewImageSrc": this.img_db.PhotoDb.creators.initiator,
+
+      },
+      {
+        "previewImageSrc": this.img_db.PhotoDb.creators.teacher2,
+
+      },
+      {
+        "previewImageSrc": this.img_db.PhotoDb.creators.teacher3,
+
+      },
+      {
+        "previewImageSrc": this.img_db.PhotoDb.creators.teacher4,
+
+      },
+      {
+        "previewImageSrc": this.img_db.PhotoDb.creators.teacher5,
+
+      },
+      {
+        "previewImageSrc": this.img_db.PhotoDb.group_pics.group1,
+        
       },{
-        "previewImageSrc": "assets/images/pic1.jpg",
-        "thumbnailImageSrc": "assets/images/pic1.jpg",
-        "alt": "Description for Image 1",
-        "title": "Title 1"
+        "previewImageSrc": this.img_db.PhotoDb.quotes.quotes1 ,
+
       },
       {
-      "previewImageSrc": "assets/images/pic2.jpg",
-      "thumbnailImageSrc": "assets/images/pic2.jpg",
-      "alt": "Description for Image 1",
-      "title": "Title 1"
+      "previewImageSrc": this.img_db.PhotoDb.quotes.quotes2,
+ 
       },
       {
-      "previewImageSrc": "assets/images/pic3.jpg",
-      "thumbnailImageSrc": "assets/images/pic3.jpg",
-      "alt": "Description for Image 1",
-      "title": "Title 1"
+      "previewImageSrc": this.img_db.PhotoDb.quotes.quotes3,
+   
       },
       {
-        "previewImageSrc": "assets/images/pic4.jpg",
-        "thumbnailImageSrc": "assets/images/pic4.jpg",
-        "alt": "Description for Image 1",
-        "title": "Title 1"
+        "previewImageSrc": this.img_db.PhotoDb.quotes.quotes4,
+
       },
       {
-        "previewImageSrc": "assets/images/pic5.jpg",
-        "thumbnailImageSrc": "assets/images/pic5.jpg",
-        "alt": "Description for Image 1",
-        "title": "Title 1"
+        "previewImageSrc": this.img_db.PhotoDb.quotes.quotes5,
+   
       },
       {
-        "previewImageSrc": "assets/images/pic6.jpg",
-        "thumbnailImageSrc": "assets/images/pic6.jpg",
-        "alt": "Description for Image 1",
-        "title": "Title 1"
+        "previewImageSrc": this.img_db.PhotoDb.quotes.quotes6,
+
       }
     ]
   }

@@ -1,6 +1,47 @@
-.card{
-  height: 300px;
-  width: 300px;
-  background-color: red;
-  box-shadow: 5px 10px 8px #888888;
+.org-banner{
+    .org-pic{
+      img{
+        border: 2px solid blue;
+        border-radius: 100px;
+        height: 100%;
+        width: 100%;
+      }
+      // flex: 1;
+      order: 1;
+      height: 300px;
+      width: 400px;
+    }
+    .p-wrapper{
+      // flex: 2;
+      width: 40%;
+      order: 2;
+      gap: 50px;
+      display: flex;
+      flex-direction: column;
+    }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+@media screen and (max-width: 768px) {
+  .org-banner{
+    .org-pic{
+      img{
+        border: 2px solid blue;
+        border-radius: 100px;
+        height: 100%;
+        width: 100%;
+      }
+      // flex: 1;
+      order: 1;
+      height: 300px;
+      width: 90%;
+    }
+    .p-wrapper{
+      width: 90%; 
+    }
+    gap: 30px;
+    flex-direction: column;
+  }
 }

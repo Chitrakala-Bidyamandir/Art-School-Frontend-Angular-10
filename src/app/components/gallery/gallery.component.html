@@ -7,14 +7,14 @@
   </ng-template>
   <ng-template pTemplate="thumbnail" let-item>
       <div class="p-grid p-nogutter p-justify-center">
-          <img [src]="item.thumbnailImageSrc" style="display: block;"/>
+          <img [src]="item.previewImageSrc" style="display: block;"/>
       </div>
   </ng-template>
   </p-galleria>
   <div class="gallery">
       <div *ngFor="let image of images; let index = index;">
         <div class="pic-wrapper">
-          <img [src]="image.thumbnailImageSrc" [alt]="image.alt" style="cursor: pointer" (click)="imageClick(index)"/>
+          <img [src]="image.previewImageSrc" style="cursor: pointer" (click)="imageClick(index)"/>
         </div>
       </div>
   </div>

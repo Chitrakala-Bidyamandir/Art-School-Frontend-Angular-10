@@ -1,28 +1,15 @@
 <div class="container">
-
-   
-        <slider class="img-slider"></slider>
+   <slider class="img-slider"></slider>
         
-    
-    
     <div class="banner">
-        <div class="event-wrapper">
-            <div class="captions">
-                <!-- <h2>New Event : March 2021</h2> -->
-                <h1>Art and Craft season 2 coming soon </h1>
-            </div>
-            <div class="image">
-                <img src="assets/images/art.svg" alt="">
-            </div>
-        </div>
+        <event-banner></event-banner>
     </div>
 
+    <div class="cards-container">
+        <card class="" *ngFor="let card of cards;" [data]="card"></card>
+    </div>
 
-      
-    
-  <div class="cards-container">
-    <card class="" *ngFor="let card of cards;" [data]="card"></card>
-   </div>
+    <about-group class="about"></about-group>
 </div>
 
 <app-footer></app-footer>
