@@ -1,17 +1,27 @@
 .footer{
+  a{
+    text-decoration: none;
+  }
   .hr{
     background-color: tomato;
     width: 80%;
     height: 5px;
   }
   .social-media{
+    a{
+      color: tomato;
+      font-size: 2rem;
+    }
+    a:hover{
+      cursor: pointer;
+    }
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     width: 400px;
   }
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   height: 400px;
