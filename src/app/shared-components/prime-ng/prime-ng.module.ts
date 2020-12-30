@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { RippleModule } from 'primeng/ripple';
 import { AccordionModule } from 'primeng/accordion';
 import { GalleriaModule } from 'primeng/galleria';
 import { CardModule } from 'primeng/card';
@@ -15,6 +16,7 @@ import { DialogModule } from 'primeng/dialog';
     GalleriaModule,
     ButtonModule,
     CardModule,
+    RippleModule,
     DialogModule
   ],
   exports:[
@@ -22,6 +24,7 @@ import { DialogModule } from 'primeng/dialog';
     GalleriaModule,
     ButtonModule,
     CardModule,
+    RippleModule,
     DialogModule
   ]
 })

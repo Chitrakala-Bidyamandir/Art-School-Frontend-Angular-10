@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { PrimeNGConfig } from 'primeng/api';
+
 
 @Component({
   selector: 'card',
@@ -7,9 +9,12 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
 @Input('data') obj: any;
-  constructor() { }
+  constructor(private primengConfig: PrimeNGConfig) { 
+
+  }
 
   ngOnInit(): void {
+    this.primengConfig.ripple = true;
   }
 
 }
